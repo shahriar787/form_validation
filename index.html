@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation </title>
+	
+	<style>
+		.error_msg{
+			color:red;
+			font-weight:bold;
+		}
+	
+	</style>
+</head>
+
+<body>
+
+
+
+    <div class="login_form">
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" placeholder="Username or Email" id="username">
+                <div class="error_msg" id="username_error">
+
+                </div>
+                <!--./error_msg - username_error -->
+            </div>
+            <!--./form_group -->
+            <br/>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <div class="error_msg" id="password_error">
+
+                </div>
+                <!--./error_msg - username_error -->
+            </div>
+            <!--./form_group -->
+
+            <br/>
+            <input type="submit" onclick="checkValidation()" />
+        </form>
+    </div>
+    <!--./login_form -->
+
+
+
+
+    <div id="result"></div>
+
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>
